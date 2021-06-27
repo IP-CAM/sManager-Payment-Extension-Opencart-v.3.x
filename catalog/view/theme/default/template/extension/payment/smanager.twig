@@ -1,0 +1,69 @@
+<div class="buttons">
+    <div class="right">
+        <button id="smanagerPayBtn" class="btn btn-primary"
+            token="{{ tran_id}}"
+            postdata=""
+            order="{{ tran_id}}"
+            endpoint="{{process_url}}">{{button_confirm}}
+        </button>
+    </div>
+</div>
+{% if api_type == "YES" %}
+    <script type="text/javascript">
+    $('#smanagerPayBtn').click(function(e){
+
+        $.ajax({
+            url: 'index.php?route=extension/payment/smanager/sendrequest',
+            type: 'post',
+            data: $('#smanagerPayBtn :input'),
+            dataType: 'json',
+            cache: false,
+            beforeSend: function() {
+                $('#smanagerPayBtn').button('loading');
+            },
+            complete: function() {
+                $('#smanagerPayBtn').button('reset');
+            },
+            success: function(json) {
+                if (json['error']) {
+                    alert(json['error']);
+                }
+
+                if (json['plInitiateUrl']) {
+                    location.href = json['plInitiateUrl'];
+                }
+            }
+        });
+    });
+</script>
+
+{% elseif api_type == "NO" %}
+    <script type="text/javascript">
+    $('#smanagerPayBtn').click(function(e){
+
+       $.ajax({
+            url: 'index.php?route=extension/smanagerPayBtn/smanager/sendrequest',
+            type: 'post',
+            data: $('#payment :input'),
+            dataType: 'json',
+            cache: false,
+            beforeSend: function() {
+                $('#smanagerPayBtn').button('loading');
+            },
+            complete: function() {
+                $('#smanagerPayBtn').button('reset');
+            },
+            success: function(json) {
+                if (json['error']) {
+                    alert(json['error']);
+                }
+
+                if (json['plInitiateUrl']) {
+                    location.href = json['plInitiateUrl'];
+                }
+            }
+        });
+    });
+    </script>
+	
+{% endif %}

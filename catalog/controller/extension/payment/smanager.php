@@ -168,7 +168,7 @@ class ControllerExtensionPaymentSmanager extends Controller
             'Accept: application/json'
         ];
 
-        $redirect_url = 'https://api.dev-sheba.xyz/v1/ecom-payment/initiate';
+        $redirect_url = 'https://api.sheba.xyz/v1/ecom-payment/initiate';
         $api_type = "NO";
 
         $amount          = $this->currency
@@ -280,7 +280,7 @@ class ControllerExtensionPaymentSmanager extends Controller
         $order_info = $this->model_checkout_order->getOrder($order_id);
         $amount = $this->currency->format($order_info['total'], $order_info['currency_code'], $order_info['currency_value'], false);
 
-        $requested_url = 'https://api.dev-sheba.xyz/v1/ecom-payment/details?transaction_id=' . $transid;
+        $requested_url = 'https://api.sheba.xyz/v1/ecom-payment/details?transaction_id=' . $transid;
 
         $amount = $this->currency
             ->format($order_info['total'], $order_info['currency_code'], $order_info['currency_value'], false);

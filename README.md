@@ -16,51 +16,15 @@ Please follow these steps to install the sManager Online Payment module.
 
 - Step 2: If you download the file from Github, Unzip Downloaded File.
 
-- Step 3: Upload Folder Name catalog and admin to the Root of your server, where your opencart installed.
+- Step 3: Copy `admin` and `catalog` folder and paste them to the root directory of the opencart project.
 
-- Step 4: Copy the contents of this package to your opencart installation keeping the folder structure.
+- Step 4: Login to the Open Cart admin section and go to Extensions > Extensions > Payments
 
-- Step 5: Overwrite files/folders as necessary (no core opencart files will be overwritten)
+- Step 5: Find `sManager Online Payment` from the list of extensions and `install` it.
 
-- Step 6: Login to the Open Cart admin section and go to Extensions > Extensions > Payments
+- Step 6: Click on the `Edit` icon of the payment module settings
 
-- Step 7: Find sManager Payment Link or find the logo of sManager in the list of extensions
-
-- Step 8: Click `Install` and then `Edit` the payment module settings
-
-- step 11: Now go to your admin panel. Then goto extension. Find sManager Payment Link install it.
-
-- Step 12: Set Client ID and Client Secret and save it.
-
-Or,
-
-- Step 1: First Download or clone the File from Github.
-
-- Step 2: If you download the file from Github, Unzip Downloaded File.
-
-- Step 3: Open cPanal public_html folder.
-
-- Step 4: Goto admin->controller->extension->payment and paste smanager.php file [you find it at unzipped folder admin->controller->extension->payment]
-
-- Step 5: Goto admin->language->en-gb->extension->payment and paste smanager.php file [you fiend it at unzipped folder admin->language->en-gb->extension->payment]
-
-- Step 6: Goto admin->view->template->extension->payment and paste smanager.twig file [you fiend it at unzipped folder admin->view->template->extension->payment ]
-
-- Step 7: Goto catalog->controller->extension->payment  and paste smanager.twig file [you fiend it at unzipped folder catalog->view->template->extension->payment ]
-
-- Step 8: Goto catalog->language->en-gb->extension->payment and past smanager.php file [you fiend it at unzipped folder catalog->language->en-gb->extension->payment]
-
-- Step 9: Goto catalog->model->extension->payment and past smanager.php file [you fiend it at unzipped folder catalog->model->extension->payment]
-
-- Step 10: Goto catalog->view->template->extension->payment and paste smanager.twig file [you fiend it at unzipped folder catalog->view->template->extension->payment ];
-
-- Step 11: Now go to your admin panel  goto extension fiend sManager Payment Link install it.
-
-- Step 12: Set Client ID and Client Secret and save it.
-
------------------------------- Now enjoy sManager Online Payment ------------------------------
-
-<strong>N.B. If you can't find your order, please filter it as missing orders.</strong>
+- Step 7: Set Client ID and Client Secret and `Enable` it.
 
 <h3>Image Reference</h3>
 

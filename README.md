@@ -36,4 +36,4 @@ Please follow these steps to install the sManager Online Payment module.
 > <img src="https://raw.githubusercontent.com/smanager-technology/sManager-OpenCart/master/images/3.png" alt="Payment Configuration Page" />
 
 > sManager Online Payment
-> <img src="https://raw.githubusercontent.com/smanager-technology/sManager-OpenCart/master/images/sManager-online-payment.png" alt="sManager Online Payment" />
+> <img src="https://raw.githubusercontent.com/smanager-technology/sManager-OpenCart/master/images/sManager_online_payment.png" alt="sManager Online Payment" />

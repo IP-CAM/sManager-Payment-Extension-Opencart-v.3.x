@@ -37,3 +37,16 @@ Please follow these steps to install the sManager Online Payment module.
 
 > sManager Online Payment
 > <img src="https://raw.githubusercontent.com/smanager-technology/sManager-OpenCart/master/images/sManager_online_payment.png" alt="sManager Online Payment" />
+
+### Contributors
+
+> Riyad Mohammad
+
+> Saleh Ahmad
+
+- Author : sManager Technology
+- Email: smanager.tech@gmail.com (For any query)
+- About sManager Technology: https://smanagerit.xyz/
+- About sManager: https://smanager.xyz/
+
+© 2021 sManager Technology ALL RIGHTS RESERVED
